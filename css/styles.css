@@ -45,7 +45,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-    padding: 120px 156px;
+    padding: 120px 0;
 }
 
 .team-header,
@@ -89,13 +89,13 @@ section {
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .page-nav {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .page-nav-logo {
@@ -118,15 +118,15 @@ section {
     display: flex;
 }
 
-.page-nav-list .nav-list-link {
+.nav-list-link {
     font-size: 16px;
     color: #2e2f42;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    padding: 24px 0 24px;
 }
-
 
 .nav-items:not(:last-child) {
     margin-right: 40px;
@@ -137,18 +137,16 @@ section {
     color: #404bbf;
 }
 
-.address {
+.address-items {
     font-style: normal;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    
 }
 
-.address-links .address-links-item {
+.address-links-item {
     color: #434455;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0 24px;
 }
 
 .address-links .address-links-item:hover,
@@ -217,6 +215,9 @@ section {
     margin: -1px;
     padding: 0;
     border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
@@ -257,6 +258,7 @@ section {
 
 .team-list-items {
     width: calc((100% - 24px * 3) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-images {
