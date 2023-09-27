@@ -45,7 +45,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-    padding: 120px 0;
+    padding: 120px 120px;
 }
 
 .team-header,
@@ -266,8 +266,6 @@ section {
 
 /*==================== PORTFOLIO =================*/
 
-.fourth-section {}
-
 .portfolio-header {
     margin-bottom: 72px;
 }
@@ -280,12 +278,13 @@ section {
 }
 
 .portfolio-item {
-    border: 1px solid #E7E9FC;
     width: calc((100% - 24px * 2) / 3);
 }
 
-.portfolio-images {
-    margin-bottom: 32px;
+.portfolio-image-info {
+    border: 1px solid #E7E9FC;
+    border-top: none;
+    padding-top: 32px;
 }
 
 .portfolio-titles,
@@ -331,4 +330,3 @@ section {
     max-width: 264px;
     margin-top: 16px;
 }
-
