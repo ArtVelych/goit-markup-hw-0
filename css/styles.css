@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #FFFFFF;
@@ -8,12 +14,38 @@ ul {
     list-style-type: none;
 }
 
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
 a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+}
+
 button {
     cursor: pointer;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 120px 0;
 }
 
 .team-header,
@@ -46,7 +78,23 @@ button {
     letter-spacing: 0.02em;
 }
 
-/*=================== header ===================*/
+/*=================== HEADER ===================*/
+
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    align-items: center;
+}
+
+.page-nav {
+    display: flex;
+}
 
 .page-nav-logo {
     font-family: "Raleway", sans-serif;
@@ -56,10 +104,16 @@ button {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-left: 0;
+    margin-right: 76px;
 }
 
 .logo-name {
     color: #2E2F42;
+}
+
+.page-nav-list {
+    display: flex;
 }
 
 .page-nav-list .nav-list-link {
@@ -71,6 +125,11 @@ button {
     text-transform: capitalize;
 }
 
+
+.nav-items:not(:last-child) {
+    margin-right: 40px;
+}
+
 .page-nav-list .nav-list-link:hover,
 .page-nav-list .nav-list-link:focus {
     color: #404bbf;
@@ -78,6 +137,7 @@ button {
 
 .address {
     font-style: normal;
+    
 }
 
 .address-links .address-links-item {
@@ -92,30 +152,48 @@ button {
     color: #404bbf;
 }
 
+.address-links {
+    display: flex;
+}
+
+.address-items:not(:last-child) {
+    margin-right: 40px;
+}
+
 /*=============================================*/
 
 /*================= MAIN BODY ===============*/
 
 .first-section {
     background-color: #2E2F42;
+    padding: 188px 0;
+    border: 1px solid #000000;
 }
 
 .hero {
     color: #FFFFFF;
+    max-width: 496px;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: 48px;
 }
 
-.header-button {
+.hero-button {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: #4D5AE5;
+    display: block;
+    margin: 0 auto;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
 }
 
 .header-button:hover,
@@ -125,31 +203,113 @@ button {
 
 /*==========================================*/
 
+/*==================== FEATURES ===============*/
 
-/*==================== Our Team ===============*/
+.second-section {}
+
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+.features-items {
+    width: calc((100% - 24px * 3) / 4);
+    margin: 0 auto;
+}
+
+.features-titles {
+    margin-bottom: 8px;
+}
+
+.features-text {}
+
+/*==========================================*/
+
+/*==================== OUR TEAM ===============*/
 
 .third-section {
     background-color: #F4F4FD;
+}
+
+.team-header {
+    margin-bottom: 72px;
 }
 
 .team-list .team-list-items {
     background-color: #FFFFFF;
 }
 
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.team-list-items {
+    width: calc((100% - 24px * 3) / 4);
+}
+
+.team-images {
+    margin-bottom: 32px;
+}
+
 .team-titles {
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-text {
     text-align: center;
+    padding-bottom: 32px;
 }
 
 /*=============================================*/
 
-/*==================== Footer =================*/
+/*==================== PORTFOLIO =================*/
+
+.fourth-section {}
+
+.portfolio-header {
+    margin-bottom: 72px;
+}
+
+.portfolio-list {
+    min-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.portfolio-item {
+    border: 1px solid #E7E9FC;
+    width: calc((100% - 24px * 2) / 3);
+}
+
+.portfolio-images {
+    margin-bottom: 32px;
+}
+
+.portfolio-titles,
+.portfolio-text {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.portfolio-titles {
+    margin-bottom: 8px;
+}
+
+.portfolio-text {
+    padding-bottom: 32px;
+}
+
+/*=============================================*/
+
+/*==================== FOOTER =================*/
 
 .page-footer {
     background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .page-footer-logo {
@@ -168,4 +328,7 @@ button {
 
 .page-footer-text {
     color: #F4F4FD;
+    max-width: 264px;
+    margin-top: 16px;
 }
+
