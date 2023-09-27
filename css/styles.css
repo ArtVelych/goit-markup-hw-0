@@ -78,7 +78,7 @@ section {
     letter-spacing: 0.02em;
 }
 
-/*=================== HEADER ===================*/
+/*=============== HEADER ===================*/
 
 .header {
     border-bottom: 1px solid #E7E9FC;
@@ -89,13 +89,13 @@ section {
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .page-nav {
     display: flex;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .page-nav-logo {
@@ -135,6 +135,12 @@ section {
 .page-nav-list .nav-list-link:hover,
 .page-nav-list .nav-list-link:focus {
     color: #404bbf;
+}
+
+.address {
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .address-items {
@@ -206,7 +212,7 @@ section {
 
 /*==========================================*/
 
-/*==================== FEATURES ===============*/
+/*================ FEATURES ===============*/
 
 .visually-hidden {
     position: absolute;
@@ -237,7 +243,7 @@ section {
 
 /*==========================================*/
 
-/*==================== OUR TEAM ===============*/
+/*================= OUR TEAM ===============*/
 
 .third-section {
     background-color: #F4F4FD;
@@ -261,8 +267,8 @@ section {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-images {
-    margin-bottom: 32px;
+.team-info {
+    padding: 32px 0;
 }
 
 .team-titles {
@@ -272,12 +278,11 @@ section {
 
 .team-text {
     text-align: center;
-    padding-bottom: 32px;
 }
 
 /*=============================================*/
 
-/*==================== PORTFOLIO =================*/
+/*============ PORTFOLIO ===================*/
 
 .portfolio-header {
     margin-bottom: 72px;
@@ -297,26 +302,16 @@ section {
 .portfolio-image-info {
     border: 1px solid #E7E9FC;
     border-top: none;
-    padding-top: 32px;
-}
-
-.portfolio-titles,
-.portfolio-text {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding: 32px 16px;
 }
 
 .portfolio-titles {
     margin-bottom: 8px;
 }
 
-.portfolio-text {
-    padding-bottom: 32px;
-}
-
 /*=============================================*/
 
-/*==================== FOOTER =================*/
+/*================= FOOTER =================*/
 
 .page-footer {
     background-color: #2E2F42;
@@ -332,6 +327,8 @@ section {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-name {
@@ -341,5 +338,4 @@ section {
 .page-footer-text {
     color: #F4F4FD;
     max-width: 264px;
-    margin-top: 16px;
 }
