@@ -45,7 +45,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-    padding: 120px 120px;
+    padding: 120px 156px;
 }
 
 .team-header,
@@ -87,13 +87,15 @@ section {
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .page-nav {
     display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .page-nav-logo {
@@ -137,6 +139,8 @@ section {
 
 .address {
     font-style: normal;
+    padding-top: 24px;
+    padding-bottom: 24px;
     
 }
 
@@ -192,6 +196,7 @@ section {
     display: block;
     margin: 0 auto;
     padding: 16px 32px;
+    min-width: 169px;
     border: none;
     border-radius: 4px;
 }
@@ -205,7 +210,15 @@ section {
 
 /*==================== FEATURES ===============*/
 
-.second-section {}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
 
 .features-list {
     display: flex;
@@ -220,8 +233,6 @@ section {
 .features-titles {
     margin-bottom: 8px;
 }
-
-.features-text {}
 
 /*==========================================*/
 
