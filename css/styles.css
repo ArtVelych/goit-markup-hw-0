@@ -94,8 +94,6 @@ section {
 .page-nav {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .page-nav-logo {
@@ -126,6 +124,7 @@ section {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     padding: 24px 0 24px;
+    display: block;
 }
 
 .nav-items:not(:last-child) {
@@ -135,12 +134,6 @@ section {
 .page-nav-list .nav-list-link:hover,
 .page-nav-list .nav-list-link:focus {
     color: #404bbf;
-}
-
-.address {
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .address-items {
@@ -153,6 +146,7 @@ section {
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0 24px;
+    display: block;
 }
 
 .address-links .address-links-item:hover,
@@ -162,6 +156,7 @@ section {
 
 .address-links {
     display: flex;
+    align-items: center;
 }
 
 .address-items:not(:last-child) {
