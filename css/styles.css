@@ -114,6 +114,7 @@ section {
 
 .page-nav-list {
     display: flex;
+    align-items: center;
 }
 
 .nav-list-link {
